@@ -1,0 +1,9 @@
+name: Python CI
+
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: flake8
+        run: make lint
