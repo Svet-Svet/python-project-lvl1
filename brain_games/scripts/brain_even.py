@@ -18,13 +18,13 @@ def is_even():
     return num % 2 == 0
 
 
-def right_answer():
-    return 'yes' if is_even() == True else 'no'
-
-
 def get_question():
     your_answer = prompt.string('Your answer: ')
     return your_answer
+
+
+def right_answer():
+    return 'yes' if is_even() == True else 'no'
 
 
 def get_game_parity():
@@ -46,7 +46,8 @@ def get_game_parity():
             print(f'"{get_question()}" is wrong answer ;( Correct answer is "{right_answer()}".')
             print(f"Let's try again, {name}")
             break
-        print(f'Congratulations, {name}!')
+        if rounds_count == 3:
+            print(f'Congratulations, {name}!')
 
 
 def main():
