@@ -19,7 +19,7 @@ def is_even():
 
 
 def right_answer():
-    return 'yes' if True == is_even() else 'no'
+    return 'yes' if is_even() == True else 'no'
 
 
 def get_question():
@@ -46,8 +46,7 @@ def get_game_parity():
             print(f'"{get_question()}" is wrong answer ;( Correct answer is "{right_answer()}".')
             print(f"Let's try again, {name}")
             break
-
-    print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
 
 
 def main():
