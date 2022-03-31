@@ -27,6 +27,12 @@ def get_number():
     return num
 
 
+def get_sign():
+    math_list = ["-", "+", "*"]
+    random_index = random.randint(0, len(math_list) - 1)
+    return random_index
+
+
 def get_game_calc():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -38,8 +44,9 @@ def get_game_calc():
     while rounds_count <= 3:
         num1 = get_number()
         num2 = get_number()
-        answer = f'{num1} + {num2}'
-        true_answer = str(num1 + num2)
+        sign = get_sign()
+        answer = f'{num1} {sign} {num2}'
+        true_answer = str(num1, sign,  num2)
         print(f'Question: {answer}!')
         your_answer = prompt.string('Your answer: ')
 
