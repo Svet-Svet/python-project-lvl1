@@ -12,3 +12,9 @@ This repository is first studies project. It is five different games for you bra
 This is a game where you must find out even whether the number is even or not.
 
 [![asciicast](https://asciinema.org/a/fmJCdqUgoyuzKBdCOYRS3fkH3.svg)](https://asciinema.org/a/fmJCdqUgoyuzKBdCOYRS3fkH3)
+
+### Brain Calc 
+
+This is a game like a calculator.
+
+[![asciicast](https://asciinema.org/a/SUNuPsrUh20G2pbSodoc2f2Yp.svg)](https://asciinema.org/a/SUNuPsrUh20G2pbSodoc2f2Yp)
