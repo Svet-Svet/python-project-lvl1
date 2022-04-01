@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import random
 from random import randint
 import prompt
 
@@ -21,6 +22,8 @@ import prompt
 #    your_answer = prompt.string('Your answer: ')
 #    return your_answer
 
+rounds_count = 3
+
 
 def get_number():
     num = randint(1, 100)
@@ -29,7 +32,7 @@ def get_number():
 
 def get_sign():
     math_list = ["-", "+", "*"]
-    random_index = random.randint(0, len(math_list) - 1)
+    random_index = random.choice(math_list)
     return random_index
 
 
@@ -39,22 +42,29 @@ def get_game_calc():
     print(f'Hello, {name}!')
     print('What is the result of the expression?')
 
-    rounds_count = 1
-
-    while rounds_count <= 3:
+    for _ in range(rounds_count):
         num1 = get_number()
         num2 = get_number()
         sign = get_sign()
-        answer = f'{num1} {sign} {num2}'
-        true_answer = str(num1, sign,  num2)
-        print(f'Question: {answer}!')
+        question = f'{num1} {sign} {num2}'
+
+        if sign == '-':
+            answer = num1 - num2
+        elif sign == '+':
+            answer = num1 + num2
+        elif sign == '*':
+            answer = num1 * num2
+
+        print(f'Question: {question}!')
         your_answer = prompt.string('Your answer: ')
 
-        if your_answer == true_answer:
+        if your_answer == str(answer):
             print('Correct!')
-            rounds_count += 1
         else:
-            print(f'"{your_answer}" is wrong answer ;( Correct answer is "{true_answer}".')
+            print(
+                f'"{your_answer}" is wrong answer ;( '
+                f'Correct answer is "{answer}".'
+            )
             print(f"Let's try again, {name}")
             break
         print(f'Congratulations, {name}!')

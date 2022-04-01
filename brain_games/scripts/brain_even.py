@@ -21,6 +21,8 @@ import prompt
 #    your_answer = prompt.string('Your answer: ')
 #    return your_answer
 
+round_count = 3
+
 
 def get_number():
     num = randint(1, 100)
@@ -33,14 +35,11 @@ def get_game_parity():
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    rounds_count = 1
-
-    while rounds_count <= 3:
+    for _ in range(round_count):
         num = get_number()
         print(f'Question: {num}!')
         your_answer = prompt.string('Your answer: ')
 
-        ''
         if num % 2 == 0:
             result = 'yes'
         else:
@@ -48,9 +47,11 @@ def get_game_parity():
 
         if your_answer == result:
             print('Correct!')
-            rounds_count += 1
         else:
-            print(f'"{your_answer}" is wrong answer ;( Correct answer is "{result}".')
+            print(
+                f'"{your_answer}" is wrong answer ;( '
+                f'Correct answer is "{result}".'
+            )
             print(f"Let's try again, {name}")
             break
         print(f'Congratulations, {name}!')
