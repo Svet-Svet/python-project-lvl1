@@ -1,16 +1,11 @@
 #!/usr/bin/env python
-import prompt
-from python-project-lvl1.brain_games.utilits import start_game
-from utilits import get_number
-from utilits import round_count
-
+import brain_games.utilits
+from brain_games.utilits import *
 
 
 def get_game_parity():
-    start_game()
-
-    for _ in range(round_count):
-        num = get_number()
+    for _ in range(brain_games.utilits.round_count):
+        num = brain_games.utilits.get_number()
         print(f'Question: {num}!')
         your_answer = prompt.string('Your answer: ')
 
@@ -32,7 +27,7 @@ def get_game_parity():
 
 
 def main():
-    get_game_parity()
+    start_game(get_game_parity)
 
 
 if __name__ == '__main__':

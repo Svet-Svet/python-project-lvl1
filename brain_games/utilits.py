@@ -3,7 +3,7 @@ from random import randint
 import prompt
 
 
-def start_game():
+def start_game(specific_game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -18,10 +18,4 @@ def get_number():
 round_count = 3
 
 
-def main():
-    start_game()
-    get_number()
 
-
-if __name__ == '__main__':
-    main()
