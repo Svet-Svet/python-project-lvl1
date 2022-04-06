@@ -18,3 +18,9 @@ This is a game where you must find out even whether the number is even or not.
 This is a game like a calculator.
 
 [![asciicast](https://asciinema.org/a/SUNuPsrUh20G2pbSodoc2f2Yp.svg)](https://asciinema.org/a/SUNuPsrUh20G2pbSodoc2f2Yp)
+
+### Brain Gcd
+
+This is a game about Euclidean algorithm. You must find a greatest common divisor of two numbers.
+
+[![asciicast](https://asciinema.org/a/AnHmV7EWItCMuz7wL8WYSkBg4.svg)](https://asciinema.org/a/AnHmV7EWItCMuz7wL8WYSkBg4)
