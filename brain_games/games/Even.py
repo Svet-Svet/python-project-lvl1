@@ -2,6 +2,10 @@
 from brain_games.utilits import start_game, get_number
 
 
+def get_question():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
 def get_game_parity():
     num = get_number()
     print(f'Question: {num}!')
@@ -13,7 +17,7 @@ def get_game_parity():
 
 
 def main():
-    start_game(get_game_parity)
+    start_game(get_game_parity, get_question)
 
 
 if __name__ == '__main__':

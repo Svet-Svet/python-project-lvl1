@@ -11,11 +11,11 @@ def get_number():
 round_count = 3
 
 
-def start_game(specific_game):
+def start_game(specific_game, get_question):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    get_question()
 
     for _ in range(round_count):
         result = specific_game()
