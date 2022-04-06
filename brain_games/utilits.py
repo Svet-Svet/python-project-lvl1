@@ -18,15 +18,15 @@ def start_game(specific_game):
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(round_count):
-        specific_game()
+        result = specific_game()
         your_answer = prompt.string('Your answer: ')
 
-        if your_answer == specific_game.result:
+        if your_answer == result:
             print('Correct!')
         else:
             print(
                 f'"{your_answer}" is wrong answer ;( '
-                f'Correct answer is "{specific_game.result}".'
+                f'Correct answer is "{result}".'
             )
             print(f"Let's try again, {name}")
             break
