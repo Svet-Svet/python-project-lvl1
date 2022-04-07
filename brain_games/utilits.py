@@ -28,6 +28,6 @@ def start_game(specific_game, get_question):
                 f'"{your_answer}" is wrong answer ;( '
                 f'Correct answer is "{result}".'
             )
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
         print(f'Congratulations, {name}!')
