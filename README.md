@@ -30,3 +30,10 @@ This is a game about Euclidean algorithm. You must find a greatest common diviso
 This is a game about progression. You must find which number is missing in the progression.
 
 [![asciicast](https://asciinema.org/a/NcQEAnmEL9I6mjpk57xKFaVyQ.svg)](https://asciinema.org/a/NcQEAnmEL9I6mjpk57xKFaVyQ)
+
+### Brain Prime
+
+This is a game where you must find out prime the number or not.
+
+[![asciicast](https://asciinema.org/a/kwVV392iWE0OopmpiWN5ITRRr.svg)](https://asciinema.org/a/kwVV392iWE0OopmpiWN5ITRRr)
+
