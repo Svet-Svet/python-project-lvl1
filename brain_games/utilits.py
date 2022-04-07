@@ -3,7 +3,7 @@ from random import randint
 import prompt
 
 
-def get_number():
+def get_number(i, i1):
     num = randint(1, 100)
     return num
 

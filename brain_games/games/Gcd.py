@@ -8,8 +8,8 @@ def get_question():
 
 
 def get_game_gcd():
-    num1 = get_number()
-    num2 = get_number()
+    num1 = get_number(1, 5)
+    num2 = get_number(1, 5)
     question = f'{num1} {num2}'
     print(f'Question: {question}!')
 

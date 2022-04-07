@@ -13,8 +13,8 @@ def get_game_calc():
         random_index = random.choice(math_list)
         return random_index
 
-    num1 = get_number()
-    num2 = get_number()
+    num1 = get_number(1, 5)
+    num2 = get_number(1, 5)
     sign = get_sign()
     question = f'{num1} {sign} {num2}'
     print(f'Question: {question}!')

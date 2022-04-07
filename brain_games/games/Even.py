@@ -7,7 +7,7 @@ def get_question():
 
 
 def get_game_parity():
-    num = get_number()
+    num = get_number(1, 5)
     print(f'Question: {num}!')
     if num % 2 == 0:
         result = 'yes'
