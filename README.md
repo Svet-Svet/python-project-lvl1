@@ -24,3 +24,9 @@ This is a game like a calculator.
 This is a game about Euclidean algorithm. You must find a greatest common divisor of two numbers.
 
 [![asciicast](https://asciinema.org/a/AnHmV7EWItCMuz7wL8WYSkBg4.svg)](https://asciinema.org/a/AnHmV7EWItCMuz7wL8WYSkBg4)
+
+### Brain Progression
+
+This is a game about progression. You must find which number is missing in the progression.
+
+[![asciicast](https://asciinema.org/a/NcQEAnmEL9I6mjpk57xKFaVyQ.svg)](https://asciinema.org/a/NcQEAnmEL9I6mjpk57xKFaVyQ)
