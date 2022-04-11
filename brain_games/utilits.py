@@ -2,22 +2,21 @@
 from random import randint
 import prompt
 
+ROUND_COUNT = 3
+
 
 def get_number():
     num = randint(1, 100)
     return num
 
 
-round_count = 3
-
-
 def start_game(specific_game, get_question):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    get_question()
+    print(get_question)
 
-    for _ in range(round_count):
+    for _ in range(ROUND_COUNT):
         result = specific_game()
         your_answer = prompt.string('Your answer: ')
 

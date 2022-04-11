@@ -3,8 +3,7 @@ from brain_games.utilits import start_game, get_number
 from random import randint
 
 
-def get_question():
-    print('What number is missing in the progression?')
+get_question = 'What number is missing in the progression?'
 
 
 def get_game_progression():

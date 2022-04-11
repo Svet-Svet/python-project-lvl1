@@ -3,8 +3,7 @@ import random
 from brain_games.utilits import start_game, get_number
 
 
-def get_question():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+get_question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_calc():
