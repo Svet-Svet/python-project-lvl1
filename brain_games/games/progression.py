@@ -20,8 +20,8 @@ def get_game_progression():
             result = number
         else:
             num += ' ' + str(number)
-    print(f'Question: {num[1: ]}!')
-    return str(result)
+    question = num[1:]
+    return str(result), question
 
 
 def main():

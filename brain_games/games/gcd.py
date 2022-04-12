@@ -10,10 +10,9 @@ def get_game_gcd():
     num1 = get_number()
     num2 = get_number()
     question = f'{num1} {num2}'
-    print(f'Question: {question}!')
 
     result = math.gcd(num1, num2)
-    return str(result)
+    return str(result), question
 
 
 def main():

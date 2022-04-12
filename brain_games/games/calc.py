@@ -16,7 +16,6 @@ def get_game_calc():
     num2 = get_number()
     sign = get_sign()
     question = f'{num1} {sign} {num2}'
-    print(f'Question: {question}!')
 
     if sign == '-':
         result = num1 - num2
@@ -24,7 +23,7 @@ def get_game_calc():
         result = num1 + num2
     elif sign == '*':
         result = num1 * num2
-    return str(result)
+    return str(result), question
 
 
 def main():

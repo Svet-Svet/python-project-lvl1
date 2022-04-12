@@ -7,12 +7,11 @@ get_question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def get_game_parity():
     num = get_number()
-    print(f'Question: {num}!')
     if num % 2 == 0:
         result = 'yes'
     else:
         result = 'no'
-    return result
+    return result, num
 
 
 def main():

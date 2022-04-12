@@ -7,7 +7,6 @@ get_question = 'Answer "yes" if the number is prime, otherwise answer "no".'
 
 def get_game_prime():
     num = get_number()
-    print(f'Question: {num}!')
     count = 0
     for i in range(2, num // 2 + 1):
         if num % i == 0:
@@ -16,7 +15,7 @@ def get_game_prime():
         result = 'yes'
     else:
         result = 'no'
-    return result
+    return result, num
 
 
 def main():

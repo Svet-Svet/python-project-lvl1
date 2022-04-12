@@ -17,7 +17,8 @@ def start_game(specific_game, get_question):
     print(get_question)
 
     for _ in range(ROUND_COUNT):
-        result = specific_game()
+        result, question = specific_game()
+        print(f'Question: {question}!')
         your_answer = prompt.string('Your answer: ')
 
         if your_answer == result:
