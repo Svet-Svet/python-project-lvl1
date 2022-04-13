@@ -20,7 +20,3 @@ def get_game_prime():
 
 def main():
     start_game(get_game_prime, QUESTION)
-
-
-if __name__ == '__main__':
-    main()

@@ -17,7 +17,3 @@ def get_game_gcd():
 
 def main():
     start_game(get_game_gcd, QUESTION)
-
-
-if __name__ == '__main__':
-    main()

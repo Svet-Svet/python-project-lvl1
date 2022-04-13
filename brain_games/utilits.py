@@ -29,4 +29,4 @@ def start_game(specific_game, QUESTION):
             )
             print(f"Let's try again, {name}!")
             return
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')

@@ -28,7 +28,3 @@ def get_game_calc():
 
 def main():
     start_game(get_game_calc, QUESTION)
-
-
-if __name__ == '__main__':
-    main()

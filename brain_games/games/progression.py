@@ -26,7 +26,3 @@ def get_game_progression():
 
 def main():
     start_game(get_game_progression, QUESTION)
-
-
-if __name__ == '__main__':
-    main()

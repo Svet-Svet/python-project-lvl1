@@ -16,7 +16,3 @@ def get_game_parity():
 
 def main():
     start_game(get_game_parity, QUESTION)
-
-
-if __name__ == '__main__':
-    main()
