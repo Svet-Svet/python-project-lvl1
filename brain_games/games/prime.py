@@ -2,7 +2,7 @@
 from brain_games.utilits import start_game, get_number
 
 
-get_question = 'Answer "yes" if the number is prime, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is prime, otherwise answer "no".'
 
 
 def get_game_prime():
@@ -19,7 +19,7 @@ def get_game_prime():
 
 
 def main():
-    start_game(get_game_prime, get_question)
+    start_game(get_game_prime, QUESTION)
 
 
 if __name__ == '__main__':

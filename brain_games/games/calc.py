@@ -2,16 +2,16 @@
 import random
 from brain_games.utilits import start_game, get_number
 
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-get_question = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+def get_sign():
+    math_list = ["-", "+", "*"]
+    random_index = random.choice(math_list)
+    return random_index
 
 
 def get_game_calc():
-    def get_sign():
-        math_list = ["-", "+", "*"]
-        random_index = random.choice(math_list)
-        return random_index
-
     num1 = get_number()
     num2 = get_number()
     sign = get_sign()
@@ -27,7 +27,7 @@ def get_game_calc():
 
 
 def main():
-    start_game(get_game_calc, get_question)
+    start_game(get_game_calc, QUESTION)
 
 
 if __name__ == '__main__':

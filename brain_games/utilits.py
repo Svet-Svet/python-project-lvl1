@@ -6,15 +6,14 @@ ROUND_COUNT = 3
 
 
 def get_number():
-    num = randint(1, 100)
-    return num
+    return randint(1, 100)
 
 
-def start_game(specific_game, get_question):
+def start_game(specific_game, QUESTION):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(get_question)
+    print(QUESTION)
 
     for _ in range(ROUND_COUNT):
         result, question = specific_game()
@@ -29,5 +28,5 @@ def start_game(specific_game, get_question):
                 f'Correct answer is "{result}".'
             )
             print(f"Let's try again, {name}!")
-            break
+            return
         print(f'Congratulations, {name}!')

@@ -2,7 +2,7 @@
 from brain_games.utilits import start_game, get_number
 
 
-get_question = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_parity():
@@ -15,7 +15,7 @@ def get_game_parity():
 
 
 def main():
-    start_game(get_game_parity, get_question)
+    start_game(get_game_parity, QUESTION)
 
 
 if __name__ == '__main__':

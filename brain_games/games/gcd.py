@@ -3,7 +3,7 @@ import math
 from brain_games.utilits import start_game, get_number
 
 
-get_question = 'Find the greatest common divisor of given numbers.'
+QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_game_gcd():
@@ -16,7 +16,7 @@ def get_game_gcd():
 
 
 def main():
-    start_game(get_game_gcd, get_question)
+    start_game(get_game_gcd, QUESTION)
 
 
 if __name__ == '__main__':
