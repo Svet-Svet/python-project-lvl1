@@ -6,7 +6,7 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_sign():
-    math_list = ["-", "+", "*"]
+    math_list = ['-', '+', '*']
     random_index = random.choice(math_list)
     return random_index
 
