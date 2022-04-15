@@ -1,18 +1,18 @@
 #!/usr/bin/env python
-from brain_games.utilits import start_game, get_number
+from brain_games.utilits import get_game, get_random_number
 
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_parity():
-    num = get_number()
-    if num % 2 == 0:
+    number = get_random_number()
+    if number % 2 == 0:
         result = 'yes'
     else:
         result = 'no'
-    return result, num
+    return result, number
 
 
-def main():
-    start_game(get_game_parity, QUESTION)
+def start_game_parity():
+    get_game(get_game_parity, QUESTION)
