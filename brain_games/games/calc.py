@@ -24,7 +24,7 @@ def specification_for_get_game_calc():
     elif sign == '*':
         result = number1 * number2
     else:
-        raise Exception('<Попробуйте еще раз>')
+        raise Exception('<Такой знак не поддерживается>')
     return str(result), question
 
 
