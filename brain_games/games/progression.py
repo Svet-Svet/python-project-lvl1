@@ -1,28 +1,28 @@
 #!/usr/bin/env python
-from brain_games.utilits import get_game, get_random_number
+from brain_games.utilits import run_game, get_random_number
 from random import randint
 
 
 QUESTION = 'What number is missing in the progression?'
+PROGRESSION_LENGTH = 10
 
 
-def get_game_progression():
+def specification_for_get_game_progression():
     first_number = get_random_number()
     difference = get_random_number()
-    progression_length = 10
-    missed_element = randint(0, progression_length - 1)
+    missed_element_index = randint(0, PROGRESSION_LENGTH - 1)
     progression = str()
-    result = str()
-    for i in range(progression_length):
+    result = int()
+    for i in range(PROGRESSION_LENGTH):
         number = first_number + i * difference
-        if i == missed_element:
+        if i == missed_element_index:
             progression += ' ..'
             result = number
         else:
             progression += ' ' + str(number)
-    question = progression[1:]
+    question = progression.lstrip()
     return str(result), question
 
 
-def start_game_progression():
-    get_game(get_game_progression, QUESTION)
+def build_game_progression():
+    run_game(specification_for_get_game_progression, QUESTION)

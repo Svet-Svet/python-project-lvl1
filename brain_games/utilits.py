@@ -3,15 +3,15 @@ from random import randint
 import prompt
 
 ROUND_COUNT = 3
+FIRST_NUMBER_FOR_RANDOM = 1
+FINAL_NUMBER_FOR_RANDOM = 100
 
 
 def get_random_number():
-    START = 1
-    FINISH = 100
-    return randint(START, FINISH)
+    return randint(FIRST_NUMBER_FOR_RANDOM, FINAL_NUMBER_FOR_RANDOM)
 
 
-def get_game(specific_game, question):
+def run_game(specific_game, question):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')

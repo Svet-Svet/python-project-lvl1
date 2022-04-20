@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 import random
-from brain_games.utilits import get_game, get_random_number
+from brain_games.utilits import run_game, get_random_number
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+MATH_LIST = ['-', '+', '*']
+
 
 def get_sign():
-    math_list = ['-', '+', '*']
-    return random.choice(math_list)
+    return random.choice(MATH_LIST)
 
 
-def get_game_calc():
+def specification_for_get_game_calc():
     number1 = get_random_number()
     number2 = get_random_number()
     sign = get_sign()
@@ -22,8 +23,10 @@ def get_game_calc():
         result = number1 + number2
     elif sign == '*':
         result = number1 * number2
+    else:
+        raise Exception('<Попробуйте еще раз>')
     return str(result), question
 
 
-def start_game_calc():
-    get_game(get_game_calc, QUESTION)
+def build_game_calc():
+    run_game(specification_for_get_game_calc, QUESTION)
