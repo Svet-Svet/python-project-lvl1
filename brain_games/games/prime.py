@@ -17,7 +17,7 @@ def is_prime():
     return result, number
 
 
-def build_game_prime():
+def get_answer_and_question_game_prime():
     result, number = is_prime()
     if result:
         result = 'yes'
@@ -27,4 +27,4 @@ def build_game_prime():
 
 
 def start_game_prime():
-    run_game(build_game_prime, QUESTION)
+    run_game(get_answer_and_question_game_prime, QUESTION)

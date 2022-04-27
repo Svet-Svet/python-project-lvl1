@@ -6,7 +6,7 @@ QUESTION = 'What number is missing in the progression?'
 PROGRESSION_LENGTH = 10
 
 
-def build_game_progression():
+def get_answer_and_question_game_progression():
     first_number = get_random_number()
     difference = get_random_number()
     missed_element_index = randint(0, PROGRESSION_LENGTH - 1)
@@ -24,4 +24,4 @@ def build_game_progression():
 
 
 def start_game_progression():
-    run_game(build_game_progression, QUESTION)
+    run_game(get_answer_and_question_game_progression, QUESTION)
