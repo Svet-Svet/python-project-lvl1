@@ -1,25 +1,24 @@
-#!/usr/bin/env python
 from random import randint
 import prompt
 
-ROUND_COUNT = 3
-FIRST_NUMBER_FOR_RANDOM = 1
-FINAL_NUMBER_FOR_RANDOM = 100
+ROUNDS_COUNT = 3
 
 
 def get_random_number():
-    return randint(FIRST_NUMBER_FOR_RANDOM, FINAL_NUMBER_FOR_RANDOM)
+    first_number_for_random = 1
+    final_number_for_random = 100
+    return randint(first_number_for_random, final_number_for_random)
 
 
-def run_game(specific_game, question):
+def run_game(get_specific_game, question):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(question)
 
-    for _ in range(ROUND_COUNT):
-        result, question_number = specific_game()
-        print(f'Question: {question_number}!')
+    for _ in range(ROUNDS_COUNT):
+        result, number_for_game = get_specific_game()
+        print(f'Question: {number_for_game}!')
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == result:
