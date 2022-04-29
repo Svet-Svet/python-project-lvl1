@@ -9,11 +9,7 @@ def is_prime(number):
         if number % i == 0:
             count += 1
             break
-    if count:
-        result = True
-    else:
-        result = False
-    return result
+    return count > 0
 
 
 def get_answer_and_question():
