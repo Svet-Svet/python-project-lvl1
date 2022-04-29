@@ -10,7 +10,7 @@ def get_sign():
     return random.choice(MATH_SIGNS)
 
 
-def get_answer_and_question_game_calc():
+def get_answer_and_question():
     number1 = get_random_number()
     number2 = get_random_number()
     sign = get_sign()
@@ -28,4 +28,4 @@ def get_answer_and_question_game_calc():
 
 
 def start_game_calc():
-    run_game(get_answer_and_question_game_calc, QUESTION)
+    run_game(get_answer_and_question, QUESTION)
