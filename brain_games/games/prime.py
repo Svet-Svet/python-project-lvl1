@@ -16,9 +16,9 @@ def get_answer_and_question():
     number = get_random_number()
     result = is_prime(number)
     if result:
-        result = 'yes'
-    else:
         result = 'no'
+    else:
+        result = 'yes'
     return result, number
 
 
