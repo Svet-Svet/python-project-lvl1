@@ -1,5 +1,6 @@
 import random
-from brain_games.utilits import run_game, get_random_number
+from brain_games.engine import run_game
+from brain_games.utilities import get_random_number
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 

@@ -1,13 +1,6 @@
-from random import randint
 import prompt
 
 ROUNDS_COUNT = 3
-
-
-def get_random_number():
-    first_number_for_random = 1
-    final_number_for_random = 100
-    return randint(first_number_for_random, final_number_for_random)
 
 
 def run_game(get_specific_game, question):
@@ -17,8 +10,8 @@ def run_game(get_specific_game, question):
     print(question)
 
     for _ in range(ROUNDS_COUNT):
-        result, number_for_game = get_specific_game()
-        print(f'Question: {number_for_game}!')
+        result, numbers_for_game = get_specific_game()
+        print(f'Question: {numbers_for_game}!')
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == result:
