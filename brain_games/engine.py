@@ -3,15 +3,15 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def run_game(get_specific_game, question):
+def run_game(get_specific_game, game_task):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(question)
+    print(game_task)
 
     for _ in range(ROUNDS_COUNT):
-        result, numbers_for_game = get_specific_game()
-        print(f'Question: {numbers_for_game}!')
+        result, question = get_specific_game()
+        print(f'Question: {question}!')
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == result:

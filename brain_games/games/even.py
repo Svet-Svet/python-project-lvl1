@@ -7,15 +7,18 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def is_even(number):
     if number % 2 == 0:
-        result = 'yes'
+        result = True
     else:
-        result = 'no'
+        result = False
     return result
 
 
 def get_answer_and_question():
     number = get_random_number()
-    result = is_even(number)
+    if is_even(number):
+        result = 'yes'
+    else:
+        result = 'no'
     return result, number
 
 
